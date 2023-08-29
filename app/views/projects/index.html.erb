@@ -1,0 +1,55 @@
+<div class="header">
+  <h1>Mi Portafolio</h1>
+</div>
+
+<div class="main-content">
+  <div class="user-profile">
+    <div class="user">
+      <% @users.each do |user| %>
+        <div class="user">
+          <%= image_tag user.photo %>
+          <p>Github: <%= link_to user.github, user.github %></p>
+          <p>LinkedIn: <%= link_to user.linkedin, user.linkedin %></p>
+          <p>Número: <%= user.number %></p>
+          <p>Email: <%= user.email %></p>
+          <% if user.curriculum.attached? %>
+            <p>Hoja de Vida: <%= link_to "Descargar Hoja de Vida", rails_blob_path(user.curriculum) %></p>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="technologies-container">
+    <h2>Lista de Tecnologías</h2>
+    <div class="technologies">
+      <% @technologies.each do |technology| %>
+        <div class="technology">
+          <%= image_tag technology.photo %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="projects-container">
+    <h2>Lista de Proyectos</h2>
+    <div class="projects">
+      <% @projects.each do |project| %>
+        <div class="project">
+          <%= link_to project_path(project) do %>
+            <h3><%= project.name %></h3>
+          <% end %>
+          <% if project.photos.any? %>
+            <%= link_to project_path(project) do %>
+              <%= image_tag project.photos.first %>
+            <% end %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>&copy; <%= Time.now.year %> Desarrollador Web</p>
+</footer>

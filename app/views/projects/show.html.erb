@@ -1,0 +1,21 @@
+<h1>Detalles del Proyecto</h1>
+
+<h2><%= @project.name %></h2>
+<p><%= @project.description %></p>
+<p>Repositorio: <%= @project.repo %></p>
+<% if @project.link.present? %>
+  <p>Enlace: <%= @project.link %></p>
+<% end %>
+
+<h3>Categorías Asociadas</h3>
+
+<ul>
+  <% @technologies.each do |technology| %>
+    <li><%= technology.name %></li>
+    <%= image_tag technology.photo %>
+  <% end %>
+</ul>
+
+<% @project.photos.each do |photo| %>
+  <%= image_tag photo %>
+<% end %>
