@@ -1,46 +1,67 @@
-<div class="header">
-  <h1>Mi Portafolio</h1>
-</div>
-
-<div class="main-content">
-  <div class="user-profile">
-    <div class="user">
-      <% @users.each do |user| %>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <div class="d-flex align-items-center">
         <div class="user">
-          <%= image_tag user.photo %>
-          <p>Github: <%= link_to user.github, user.github %></p>
-          <p>LinkedIn: <%= link_to user.linkedin, user.linkedin %></p>
-          <p>Número: <%= user.number %></p>
-          <p>Email: <%= user.email %></p>
-          <% if user.curriculum.attached? %>
-            <p>Hoja de Vida: <%= link_to "Descargar Hoja de Vida", rails_blob_path(user.curriculum) %></p>
+          <% @users.each do |user| %>
+            <div class="user">
+              <%= image_tag user.photo %>
+            </div>
           <% end %>
         </div>
-      <% end %>
-    </div>
-  </div>
-
-  <div class="technologies-container">
-    <h2>Lista de Tecnologías</h2>
-    <div class="technologies">
-      <% @technologies.each do |technology| %>
-        <div class="technology">
-          <%= image_tag technology.photo %>
+        <div class="name">
+          <h3>David Varon</h3>
+          <h6>Desarrollador Full Stack</h6>
         </div>
-      <% end %>
+      </div>
+      <div class="technologies-container">
+        <h3>Caja de herramientas</h3>
+        <p>Las principales herramientas que uso para crear mis proyectos</p>
+        <div class="technologies">
+          <% @technologies.each do |technology| %>
+            <div class="technology">
+              <%= image_tag technology.photo %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="about-me col-8">
+      <p>Soy desarrollo web fullstack, especializado en Ruby on Rails, JavaScript, HTML5 y CSS3. Poseo conocimientos tanto en el desarrollo del backend como en el frontend, y tengo una comprensión sólida de SQL y la gestión de bases de datos. Mi pasión por la tecnología me impulsa a estar constantemente en busca de nuevos retos profesionales.</p>
+      <p>Me gradué como Ingeniero Aeronáutico en la Universidad Pontificia Bolivariana de Medellín. Además, completé el programa de Desarrollo Web Full Stack en el Bootcamp Le Wagon en la ciudad de Buenos Aires, Argentina. También, tuve la experiencia de ser patinador profesional. Soy un apasionado de los deportes y siempre estoy ansioso por aprender nuevas cosas.</p>
+      <p>Mientras busco activamente nuevas oportunidades, me emociona combinar mis habilidades técnicas, mentalidad analítica y pasión por los deportes en proyectos de desarrollo web innovadores y de alta calidad. Estoy abierto a nuevos desafíos y ansioso por hacer una contribución significativa en proyectos gratificantes.</p>
+      <br>
+      <h4>No dudes en contactarme.</h4>
+      <br>
+      <div class="social-links d-flex">
+        <a href="https://www.linkedin.com/in/davidvaronduarte/" target="_blank">
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/dvaron2099" target="_blank">
+          <i class="fa-brands fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/david.varon2099/" target="_blank">
+          <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=573232313535" target="_blank">
+          <i class="fa-brands fa-whatsapp fa-2x"></i>
+        </a>
+        <a href="mailto:varondavid20@gmail.com">
+          <i class="fa-solid fa-envelope fa-2x"></i>
+        </a>
+      </div>
     </div>
   </div>
-
   <div class="projects-container">
     <h2>Lista de Proyectos</h2>
-    <div class="projects">
-      <% @projects.each do |project| %>
-        <div class="project">
-          <%= link_to project_path(project) do %>
-            <h3><%= project.name %></h3>
-          <% end %>
-          <% if project.photos.any? %>
+      <div class="projects">
+        <% @projects.each do |project| %>
+          <div class="project">
             <%= link_to project_path(project) do %>
+              <h3><%= project.name %></h3>
+            <% end %>
+            <% if project.photos.any? %>
+              <%= link_to project_path(project) do %>
               <%= image_tag project.photos.first %>
             <% end %>
           <% end %>
@@ -49,6 +70,7 @@
     </div>
   </div>
 </div>
+
 
 <footer class="footer">
   <p>&copy; <%= Time.now.year %> Desarrollador Web</p>
