@@ -1,2 +1,10 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+  <div class="text-center">
+    <%= link_to projects_en_path, class: "btn btn-primary btn-lg mx-2", style: "width: 150px;" do %>
+      English
+    <% end %>
+    <%= link_to projects_path, class: "btn btn-primary btn-lg mx-2", style: "width: 150px;" do %>
+      Español
+    <% end %>
+  </div>
+</div>

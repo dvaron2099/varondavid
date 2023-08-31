@@ -24,7 +24,7 @@
     </div>
     <div class="col-lg-5 col-12 details">
       <h2><%= @project.name %></h2>
-      <p><%= @project.description_es %></p>
+      <p><%= @project.description_en %></p>
       <i class="fa-brands fa-github" style="color: #d9dee8;"></i>
       <%= link_to @project.repo, @project.repo, target: "_blank", class: "repo-link" %></p>
       <% if @project.link.present? %>
@@ -35,7 +35,7 @@
 
   </div>
   <div class="tools">
-    <h3 class="py-4">Herramientas usadas</h3>
+    <h3 class="py-4">Tools Used</h3>
     <div class="technology-grid">
       <% @technologies.each do |technology| %>
         <div class="technology">

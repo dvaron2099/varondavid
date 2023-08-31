@@ -53,7 +53,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_29_050704) do
 
   create_table "projects", force: :cascade do |t|
     t.string "name"
-    t.string "description"
+    t.string "description_es"
+    t.string "description_en"
     t.string "repo"
     t.string "link"
     t.datetime "created_at", null: false

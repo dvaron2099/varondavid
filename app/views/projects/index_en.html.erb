@@ -1,5 +1,5 @@
 <div class="container">
-  <%= link_to "Ingles", projects_en_path, class: "btn btn-primary my-4" %>
+  <%= link_to "Espanish", projects_path, class: "btn btn-primary my-4" %>
   <div class="row">
     <div class="col-4">
       <div class="d-flex align-items-center">
@@ -12,12 +12,12 @@
         </div>
         <div class="name">
           <h3>David Varon</h3>
-          <h6>Desarrollador Full Stack</h6>
+          <h6>Full Stack Developer</h6>
         </div>
       </div>
       <div class="technologies-container">
-        <h3>Caja de herramientas</h3>
-        <p>Las principales herramientas que uso para crear mis proyectos</p>
+        <h3>Toolbox</h3>
+        <p>The main tools I use to create my projects</p>
         <div class="technologies">
           <% @technologies.each do |technology| %>
             <div class="technology">
@@ -28,11 +28,11 @@
       </div>
     </div>
     <div class="about-me col-8">
-      <p>Soy desarrollo web fullstack, especializado en Ruby on Rails, JavaScript, HTML5 y CSS3. Poseo conocimientos tanto en el desarrollo del backend como en el frontend, y tengo una comprensión sólida de SQL y la gestión de bases de datos. Mi pasión por la tecnología me impulsa a estar constantemente en busca de nuevos retos profesionales.</p>
-      <p>Me gradué como Ingeniero Aeronáutico en la Universidad Pontificia Bolivariana de Medellín. Además, completé el programa de Desarrollo Web Full Stack en el Bootcamp Le Wagon en la ciudad de Buenos Aires, Argentina. También, tuve la experiencia de ser patinador profesional. Soy un apasionado de los deportes y siempre estoy ansioso por aprender nuevas cosas.</p>
-      <p>Mientras busco activamente nuevas oportunidades, me emociona combinar mis habilidades técnicas, mentalidad analítica y pasión por los deportes en proyectos de desarrollo web innovadores y de alta calidad. Estoy abierto a nuevos desafíos y ansioso por hacer una contribución significativa en proyectos gratificantes.</p>
+      <p>I am a fullstack web developer, specialized in Ruby on Rails, JavaScript, HTML5, and CSS3. I possess knowledge in both backend and frontend development and have a solid understanding of SQL and database management. My passion for technology drives me to constantly seek new professional challenges.</p>
+      <p>I graduated as an Aeronautical Engineer from the Pontifical Bolivarian University of Medellín. Additionally, I completed the Full Stack Web Development program at Le Wagon Bootcamp in Buenos Aires, Argentina. I also had the experience of being a professional skateboarder. I am passionate about sports and always eager to learn new things.</p>
+      <p>While actively seeking new opportunities, I am excited to blend my technical skills, analytical mindset, and sports passion into innovative and high-quality web development projects. I am open to new challenges and eager to make a meaningful contribution to rewarding projects.</p>
       <br>
-      <h4>No dudes en contactarme.</h4>
+      <h4>Feel free to reach out.</h4>
       <br>
       <div class="social-links d-flex">
         <a href="https://www.linkedin.com/in/davidvaronduarte/" target="_blank">
@@ -54,12 +54,12 @@
     </div>
   </div>
   <div class="projects-container">
-    <h2>Proyectos</h2>
+    <h2>Projects</h2>
       <div class="projects">
         <% @projects.each do |project| %>
           <div class="project">
             <% if project.photos.any? %>
-              <%= link_to project_path(project) do %>
+              <%= link_to project_en_path(project) do %>
               <%= image_tag project.photos.first %>
             <% end %>
             <h3><%= project.name %></h3>
@@ -72,5 +72,5 @@
 
 
 <footer class="footer">
-  <p>&copy; <%= Time.now.year %> Desarrollador Web</p>
+  <p>&copy; <%= Time.now.year %> Web Developer</p>
 </footer>

@@ -114,7 +114,8 @@ puts ""
 puts "Eventik"
 eventik = Project.create(
   name: "Eventik",
-  description: "Esta aplicación web está diseñada para crear eventos. Los usuarios pueden visualizar proveedores de servicios, entablar conversaciones con ellos y conocer su ubicación a través de Mapbox.",
+  description_es: "Esta aplicación web está diseñada para crear eventos. Los usuarios pueden visualizar proveedores de servicios, entablar conversaciones con ellos y conocer su ubicación a través de Mapbox.",
+  description_en: "This web application is designed for creating events. Users can view service providers, engage in conversations with them, and discover their locations through Mapbox.",
   repo: "https://github.com/dvaron2099/eventik",
   link: "https://www.eventik.me/"
 )
@@ -150,7 +151,8 @@ puts ""
 puts "Tendencias"
 tendencias = Project.create(
   name: "Tendencias y Diseños",
-  description: "Esta página web está dirigida a la empresa T&D (Tendencia y Diseños), con sede en la ciudad de Cúcuta, en el departamento de Norte de Santander..",
+  description_es: "Esta página web está dirigida a la empresa T&D (Tendencia y Diseños), con sede en la ciudad de Cúcuta, en el departamento de Norte de Santander.",
+  description_en: "This website is aimed at the company T&D (Trends and Designs), based in the city of Cúcuta, in the department of Norte de Santander.",
   repo: "https://github.com/dvaron2099/tendencias_y_dise-os"
 )
 
@@ -182,7 +184,8 @@ puts ""
 puts "GetDressed"
 getdressed = Project.create(
   name: "GetDressed",
-  description: "Esta aplicación está diseñada como un prototipo para el alquiler de ropa.",
+  description_es: "Esta aplicación está diseñada como un prototipo para el alquiler de ropa.",
+  description_en: "This application is designed as a prototype for clothing rental.",
   repo: "https://github.com/dvaron2099/Get-Dressed"
 )
 
@@ -210,7 +213,8 @@ puts ""
 puts "Snake"
 snake = Project.create(
   name: "Snake",
-  description: "Este proyecto consiste en el famoso juego Snake, desarrollado utilizando la gema Ruby2D y con pruebas realizadas mediante la gema minitest.",
+  description_es: "Este proyecto consiste en el famoso juego Snake, desarrollado utilizando la gema Ruby2D y con pruebas realizadas mediante la gema minitest.",
+  description_en: "This project involves the well-known Snake game, developed using the Ruby2D gem and tested using the minitest gem.",
   repo: "https://github.com/dvaron2099/snake_ruby"
 )
 
@@ -228,7 +232,8 @@ puts ""
 puts "blogapi"
 blogapi = Project.create(
   name: "blogapi",
-  description: "Este proyecto consiste en la creación de una API y su posterior testing utilizando RSpec para Rails..",
+  description_es: "Este proyecto consiste en la creación de una API y su posterior testing utilizando RSpec para Rails.",
+  description_en: "This project involves the creation of an API and its subsequent testing using RSpec for Rails.",
   repo: "https://github.com/dvaron2099/blogapi"
 )
 
