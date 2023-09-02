@@ -70,7 +70,7 @@ puts "Git"
 git = Technology.create(name: "Git")
 
 file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622555/my%20web/Technologies/git_arhfwe.png")
-git.photo.attach(io: file, filename: "sass_uhvzf6.png" , content_type: "image/png")
+git.photo.attach(io: file, filename: "git_arhfwe.png" , content_type: "image/png")
 
 puts "GitHub"
 github = Technology.create(name: "GitHub")
