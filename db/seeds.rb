@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+
+
 User.destroy_all
 ProjectTechnology.destroy_all
 Project.destroy_all
@@ -20,9 +22,6 @@ user = User.create(
   number: "+573232313535",
   email: "varondavid20@gmail.com"
 )
-
-file = URI.open("/root/code/dvaron2099/varondavid/app/assets/files/CV_David_varon.pdf")
-user.curriculum.attach(io: file, filename: "CV_David_varon.pdf", content_type: "application/pdf")
 
 file = URI.open("/root/code/dvaron2099/varondavid/app/assets/images/David Varon.jpg")
 user.photo.attach(io: file, filename: "David Varon.jpg" , content_type: "image/jpg")
