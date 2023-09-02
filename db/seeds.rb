@@ -23,7 +23,7 @@ user = User.create(
   email: "varondavid20@gmail.com"
 )
 
-file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693621529/David_Varon_i0msvn.jpg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622226/my%20web/David_Varon_b33ofn.jpg")
 user.photo.attach(io: file, filename: "David Varon.jpg" , content_type: "image/jpg")
 
 puts "Usuario creado con éxito"
@@ -33,8 +33,8 @@ puts "Creando Tecnologias"
 puts "Ruby"
 ruby = Technology.create(name: "Ruby")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/ruby.png")
-ruby.photo.attach(io: URI.open(uploaded_image['url']), filename: "ruby.png", content_type: "image/png")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622563/my%20web/Technologies/ruby_vol7iz.png")
+ruby.photo.attach(io: file, filename: "ruby.png" , content_type: "image/png")
 
 puts "Ruby on Rails"
 rails = Technology.create(name: "Ruby on Rails")
@@ -45,68 +45,68 @@ rails.photo.attach(io: file, filename: "1*MtuURq-9Fe3MZM5IZqQgyw.png" , content_
 puts "JavaScript"
 javascript = Technology.create(name: "JavaScript")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/javascript.png")
-javascript.photo.attach(io: URI.open(uploaded_image['url']), filename: "javascript.png", content_type: "image/png")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622560/my%20web/Technologies/javascript_wz0nud.png")
+javascript.photo.attach(io: file, filename: "javascript.png" , content_type: "image/png")
 
 puts "HTML"
 html = Technology.create(name: "HTML")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/html.png")
-html.photo.attach(io: URI.open(uploaded_image['url']), filename: "html.png", content_type: "image/png")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622558/my%20web/Technologies/html_mxjinc.png")
+html.photo.attach(io: file, filename: "html.png" , content_type: "image/png")
 
 puts "CSS"
 css = Technology.create(name: "CSS")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/css.png")
-css.photo.attach(io: URI.open(uploaded_image['url']), filename: "css.png", content_type: "image/png")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622553/my%20web/Technologies/css_vjylgs.png")
+css.photo.attach(io: file, filename: "css.png" , content_type: "image/png")
 
 puts "Sass"
 sass = Technology.create(name: "Sass")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/sass.png")
-sass.photo.attach(io: URI.open(uploaded_image['url']), filename: "sass.png", content_type: "image/png")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622564/my%20web/Technologies/sass_uhvzf6.png")
+sass.photo.attach(io: file, filename: "sass.png" , content_type: "image/png")
 
 puts "Git"
 git = Technology.create(name: "Git")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/git.png")
-git.photo.attach(io: URI.open(uploaded_image['url']), filename: "git.png", content_type: "image/png")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622555/my%20web/Technologies/git_arhfwe.png")
+git.photo.attach(io: file, filename: "git.png" , content_type: "image/png")
 
 puts "GitHub"
 github = Technology.create(name: "GitHub")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/github.png")
-github.photo.attach(io: URI.open(uploaded_image['url']), filename: "github.png", content_type: "image/png")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622557/my%20web/Technologies/github_joo3pd.png")
+github.photo.attach(io: file, filename: "github.png" , content_type: "image/png")
 
 puts "Python"
 python = Technology.create(name: "Python")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/python.png")
-python.photo.attach(io: URI.open(uploaded_image['url']), filename: "python.png", content_type: "image/png")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622562/my%20web/Technologies/python_z3326t.png")
+python.photo.attach(io: file, filename: "python.png" , content_type: "image/png")
 
 puts "Bootstrap"
 bootstrap = Technology.create(name: "Bootstrap")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/bootstrap.png")
-bootstrap.photo.attach(io: URI.open(uploaded_image['url']), filename: "bootstrap.png", content_type: "image/png")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622553/my%20web/Technologies/bootstrap_iuiq5n.png")
+bootstrap.photo.attach(io: file, filename: "bootstrap.png" , content_type: "image/png")
 
 puts "SQL"
 sql = Technology.create(name: "SQL")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/sql.png")
-sql.photo.attach(io: URI.open(uploaded_image['url']), filename: "sql.png", content_type: "image/png")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622565/my%20web/Technologies/sql_vbxxvb.png")
+sql.photo.attach(io: file, filename: "sql.png" , content_type: "image/png")
 
 puts "Node.js"
 node = Technology.create(name: "Node.js")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/node.png")
-node.photo.attach(io: URI.open(uploaded_image['url']), filename: "node.png", content_type: "image/png")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622561/my%20web/Technologies/node_p9vxtq.png")
+node.photo.attach(io: file, filename: "node.png" , content_type: "image/png")
 
 puts "Heroku"
 heroku = Technology.create(name: "Heroku")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/heroku.png")
-heroku.photo.attach(io: URI.open(uploaded_image['url']), filename: "heroku.png", content_type: "image/png")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622558/my%20web/Technologies/heroku_pbwmmy.png")
+heroku.photo.attach(io: file, filename: "heroku.png" , content_type: "image/png")
 
 puts "Creando Proyectos"
 puts ""
@@ -131,20 +131,20 @@ ProjectTechnology.create(project_id: eventik.id, technology_id: sql.id)
 ProjectTechnology.create(project_id: eventik.id, technology_id: bootstrap.id)
 ProjectTechnology.create(project_id: eventik.id, technology_id: heroku.id)
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/Eventik/eventik_1.jpeg")
-eventik.photos.attach(io: URI.open(uploaded_image['url']), filename: "eventik_1.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624645/my%20web/Projects/eventik/eventik_1_vbtcv0.jpg")
+eventik.photos.attach(io: file, filename: "eventik_1.jpg" , content_type: "image/jpg")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/Eventik/eventik_2.jpeg")
-eventik.photos.attach(io: URI.open(uploaded_image['url']), filename: "eventik_2.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624647/my%20web/Projects/eventik/eventik_2_c8kq7u.jpg")
+eventik.photos.attach(io: file, filename: "eventik_2.jpg" , content_type: "image/jpg")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/Eventik/eventik_3.jpeg")
-eventik.photos.attach(io: URI.open(uploaded_image['url']), filename: "eventik_3.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624649/my%20web/Projects/eventik/eventik_3_s3b6pw.jpg")
+eventik.photos.attach(io: file, filename: "eventik_3.jpg" , content_type: "image/jpg")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/Eventik/eventik_4.jpeg")
-eventik.photos.attach(io: URI.open(uploaded_image['url']), filename: "eventik_4.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624650/my%20web/Projects/eventik/eventik_4_gvsgum.jpg")
+eventik.photos.attach(io: file, filename: "eventik_4.jpg" , content_type: "image/jpg")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/Eventik/eventik_5.jpeg")
-eventik.photos.attach(io: URI.open(uploaded_image['url']), filename: "eventik_5.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624652/my%20web/Projects/eventik/eventik_5_wuvobb.jpgs")
+eventik.photos.attach(io: file, filename: "eventik_5.jpg" , content_type: "image/jpg")
 
 puts ""
 puts "Tendencias"
@@ -167,17 +167,17 @@ ProjectTechnology.create(project_id: tendencias.id, technology_id: sql.id)
 ProjectTechnology.create(project_id: tendencias.id, technology_id: bootstrap.id)
 ProjectTechnology.create(project_id: tendencias.id, technology_id: heroku.id)
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/tendencias/tendencias_1.jpeg")
-tendencias.photos.attach(io: URI.open(uploaded_image['url']), filename: "tendencias_1.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624641/my%20web/Projects/tendencias/tendencias_1_x7kapw.jpg")
+tendencias.photos.attach(io: file, filename: "tendencias_1.jpg" , content_type: "image/jpg")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/tendencias/tendencias_2.jpeg")
-tendencias.photos.attach(io: URI.open(uploaded_image['url']), filename: "tendencias_2.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624643/my%20web/Projects/tendencias/tendencias_2_bpzqtf.jpg")
+tendencias.photos.attach(io: file, filename: "tendencias_2.jpg" , content_type: "image/jpg")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/tendencias/tendencias_3.jpeg")
-tendencias.photos.attach(io: URI.open(uploaded_image['url']), filename: "tendencias_3.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624665/my%20web/Projects/tendencias/tendencias_3_brhbf5.jpg")
+tendencias.photos.attach(io: file, filename: "tendencias_3.jpg" , content_type: "image/jpg")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/tendencias/tendencias_4.jpeg")
-tendencias.photos.attach(io: URI.open(uploaded_image['url']), filename: "tendencias_4.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624663/my%20web/Projects/tendencias/tendencias_4_ydcflf.jpg")
+tendencias.photos.attach(io: file, filename: "tendencias_4.jpg" , content_type: "image/jpg")
 
 puts ""
 puts "GetDressed"
@@ -199,14 +199,14 @@ ProjectTechnology.create(project_id: getdressed.id, technology_id: sql.id)
 ProjectTechnology.create(project_id: getdressed.id, technology_id: bootstrap.id)
 ProjectTechnology.create(project_id: getdressed.id, technology_id: heroku.id)
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/GetDressed/getdressed_1.jpeg")
-getdressed.photos.attach(io: URI.open(uploaded_image['url']), filename: "getdressed_1.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624654/my%20web/Projects/getdressed/getdressed_1_fge2ct.jpg")
+getdressed.photos.attach(io: file, filename: "getdressed_1.jpg" , content_type: "image/jpg")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/GetDressed/getdressed_2.jpeg")
-getdressed.photos.attach(io: URI.open(uploaded_image['url']), filename: "getdressed_2.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624658/my%20web/Projects/getdressed/getdressed_2_kqe2pk.jpg")
+getdressed.photos.attach(io: file, filename: "getdressed_2.jpg" , content_type: "image/jpg")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/GetDressed/getdressed_3.jpeg")
-getdressed.photos.attach(io: URI.open(uploaded_image['url']), filename: "getdressed_3.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624660/my%20web/Projects/getdressed/getdressed_3_l8vnpv.jpg")
+getdressed.photos.attach(io: file, filename: "getdressed_3.jpg" , content_type: "image/jpg")
 
 puts ""
 puts "Snake"
@@ -221,11 +221,11 @@ ProjectTechnology.create(project_id: snake.id, technology_id: ruby.id)
 ProjectTechnology.create(project_id: snake.id, technology_id: git.id)
 ProjectTechnology.create(project_id: snake.id, technology_id: github.id)
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/snake/snake_1.jpeg")
-snake.photos.attach(io: URI.open(uploaded_image['url']), filename: "snake_1.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624637/my%20web/Projects/snake/snake_1_n1av0j.jpg")
+snake.photos.attach(io: file, filename: "snake_1.jpg" , content_type: "image/jpg")
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/snake/snake_2.jpeg")
-snake.photos.attach(io: URI.open(uploaded_image['url']), filename: "snake_2.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624639/my%20web/Projects/snake/snake_2_wpgug3.jpg")
+snake.photos.attach(io: file, filename: "snake_2.jpg" , content_type: "image/jpg")
 
 puts ""
 puts "blogapi"
@@ -241,5 +241,7 @@ ProjectTechnology.create(project_id: blogapi.id, technology_id: rails.id)
 ProjectTechnology.create(project_id: blogapi.id, technology_id: git.id)
 ProjectTechnology.create(project_id: blogapi.id, technology_id: github.id)
 
-uploaded_image = Cloudinary::Uploader.upload("/root/code/dvaron2099/varondavid/app/assets/images/blogapi/blogapi_1.jpeg")
-blogapi.photos.attach(io: URI.open(uploaded_image['url']), filename: "blogapi_1.jpeg", content_type: "image/jpeg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624617/my%20web/Projects/blogapi/blogapi_1_wyzqxm.jpg")
+blogapi.photos.attach(io: file, filename: "blogapi_1.jpg" , content_type: "image/jpg")
+
+puts 'Seed finalizada'
