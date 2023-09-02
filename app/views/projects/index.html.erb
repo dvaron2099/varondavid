@@ -6,7 +6,12 @@
         <div class="user">
           <% @users.each do |user| %>
             <div class="user">
-              <%= image_tag user.photo %>
+              <% if user.photo.present? %>
+                <%= image_tag user.photo %>
+              <% else %>
+                <!-- Puedes mostrar un marcador de posición o un mensaje de que no hay imagen disponible -->
+                <p>No hay imagen disponible para este usuario</p>
+              <% end %>
             </div>
           <% end %>
         </div>
