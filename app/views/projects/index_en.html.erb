@@ -68,7 +68,7 @@
       <% @projects.each do |project| %>
         <div class="project">
           <% if project.photos.any? %>
-            <%= link_to project_path(project) do %>
+            <%= link_to project_en_path(project) do %>
               <%= cl_image_tag project.photos.first.key %>
             <% end %>
           <% else %>
