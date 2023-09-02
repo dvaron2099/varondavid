@@ -7,7 +7,7 @@
           <% @users.each do |user| %>
             <div class="user">
               <% if user.photo.present? %>
-                <%= cl_image_tag user.photo %>
+                <%= cl_image_tag user.photo.key %>
               <% else %>
                 <!-- Puedes mostrar un marcador de posición o un mensaje de que no hay imagen disponible -->
                 <p>No hay imagen disponible para este usuario</p>
@@ -26,7 +26,7 @@
         <div class="technologies">
           <% @technologies.each do |technology| %>
             <div class="technology">
-              <%= cl_image_tag technology.photo %>
+              <%= cl_image_tag technology.photo.key %>
             </div>
           <% end %>
         </div>
@@ -65,7 +65,7 @@
           <div class="project">
             <% if project.photos.any? %>
               <%= link_to project_path(project) do %>
-              <%= cl_image_tag project.photos.first %>
+              <%= cl_image_tag project.photos.first.key %>
             <% end %>
             <h3><%= project.name %></h3>
           <% end %>
