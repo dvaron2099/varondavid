@@ -23,7 +23,7 @@ user = User.create(
   email: "varondavid20@gmail.com"
 )
 
-file = URI.open("/root/code/dvaron2099/varondavid/app/assets/images/David Varon.jpg")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693621529/David_Varon_i0msvn.jpg")
 user.photo.attach(io: file, filename: "David Varon.jpg" , content_type: "image/jpg")
 
 puts "Usuario creado con éxito"
