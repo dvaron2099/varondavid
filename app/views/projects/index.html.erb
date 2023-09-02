@@ -26,7 +26,11 @@
         <div class="technologies">
           <% @technologies.each do |technology| %>
             <div class="technology">
-              <%= cl_image_tag technology.photo.key %>
+              <% if technology.photo.present? %>
+                <%= cl_image_tag technology.photo.key %>
+              <% else %>
+                <p>Imagen no disponible</p>
+              <% end %>
             </div>
           <% end %>
         </div>
@@ -60,15 +64,17 @@
   </div>
   <div class="projects-container">
     <h2>Proyectos</h2>
-      <div class="projects">
-        <% @projects.each do |project| %>
-          <div class="project">
-            <% if project.photos.any? %>
-              <%= link_to project_path(project) do %>
+    <div class="projects">
+      <% @projects.each do |project| %>
+        <div class="project">
+          <% if project.photos.any? %>
+            <%= link_to project_path(project) do %>
               <%= cl_image_tag project.photos.first.key %>
             <% end %>
-            <h3><%= project.name %></h3>
+          <% else %>
+            <p>Imagen no disponible</p>
           <% end %>
+          <h3><%= project.name %></h3>
         </div>
       <% end %>
     </div>
