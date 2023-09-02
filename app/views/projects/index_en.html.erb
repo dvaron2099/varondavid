@@ -6,7 +6,7 @@
         <div class="user">
           <% @users.each do |user| %>
             <div class="user">
-              <%= cl_image_tag user.photo.key %>
+              <%= cl_image_tag user.photo.url %>
             </div>
           <% end %>
         </div>
@@ -21,7 +21,7 @@
         <div class="technologies">
           <% @technologies.each do |technology| %>
             <div class="technology">
-              <%= cl_image_tag technology.photo.key %>
+              <%= cl_image_tag technology.photo.url %>
             </div>
           <% end %>
         </div>
@@ -60,7 +60,7 @@
           <div class="project">
             <% if project.photos.any? %>
               <%= link_to project_en_path(project) do %>
-              <%= cl_image_tag project.photos.first.key %>
+              <%= cl_image_tag project.photos.first.url %>
             <% end %>
             <h3><%= project.name %></h3>
           <% end %>
