@@ -143,7 +143,7 @@ eventik.photos.attach(io: file, filename: "eventik_3.jpg" , content_type: "image
 file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624650/my%20web/Projects/eventik/eventik_4_gvsgum.jpg")
 eventik.photos.attach(io: file, filename: "eventik_4.jpg" , content_type: "image/jpg")
 
-file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624652/my%20web/Projects/eventik/eventik_5_wuvobb.jpgs")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693624652/my%20web/Projects/eventik/eventik_5_wuvobb.jpg")
 eventik.photos.attach(io: file, filename: "eventik_5.jpg" , content_type: "image/jpg")
 
 puts ""
