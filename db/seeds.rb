@@ -69,7 +69,7 @@ sass.photo.attach(io: file, filename: "sass_uhvzf6.png" , content_type: "image/p
 puts "Git"
 git = Technology.create(name: "Git")
 
-file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622555/my%20web/Technologies/sass_uhvzf6.png")
+file = URI.open("https://res.cloudinary.com/drsm6hgnw/image/upload/v1693622555/my%20web/Technologies/git_arhfwe.png")
 git.photo.attach(io: file, filename: "sass_uhvzf6.png" , content_type: "image/png")
 
 puts "GitHub"
